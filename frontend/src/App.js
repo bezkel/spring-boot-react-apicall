@@ -19,7 +19,7 @@ class App extends Component {
 
 
   async componentDidMount() {
-    const response = await fetch('api/users/get');
+    const response = await fetch('api/getUsers');
     const body = await response.json();
     const countries = ['all'];
     const users = [];
@@ -50,7 +50,7 @@ class App extends Component {
 
   async handleButtonClick(e) {
     const actualSelect = this.state.selected;
-    const response = await fetch('api/users/get');
+    const response = await fetch('api/getUsers');
     const body = await response.json();
     const countries = ['all'];
     const users = [];
@@ -72,8 +72,6 @@ class App extends Component {
       countries: countries,
       selected: actualSelect
     });
-    // call filter again to keep filtered view
-    this.filter(actualSelect);
   }
 
   filter(selectString) {

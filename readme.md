@@ -11,14 +11,14 @@ Frontend is included in /frontend Folder
 
 Please check pom.xml for Spring Boot Dependencies and package.json for react Dependendies
 
+run an npm install first
+
 
 ## Parameters
 application.properties holding the following params to change the API fetch for randomUser:
 * `randomuser.url=https://randomuser.me/api/?inc=gender,name,location,email&noinfo`
 * `randomuser.userSize=5`
 * `randomuser.period=120`
-
-__Changing the url will have extremly effecting the programm cause of db-models.__
 
 ## Start
 Clone or Download the project. Make sure you have Java and Node installed.
